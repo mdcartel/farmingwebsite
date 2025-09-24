@@ -1,0 +1,353 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2E7D32;
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leaf-icon {
+    font-size: 1.8rem;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2E7D32;
+}
+
+/* Main Content */
+main {
+    padding: 20px 0 50px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.text-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #1B5E20;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #4CAF50;
+}
+
+.subheadline {
+    font-size: 1.3rem;
+    color: #388E3C;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Hero Illustration */
+.hero-illustration {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('images/farm-hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Features Section */
+.features-section {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1B5E20;
+}
+
+.features-section > p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #388E3C;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 15px;
+}
+
+.feature-emoji {
+    font-size: 1.8rem;
+}
+
+.feature-item h3 {
+    margin-bottom: 8px;
+    color: #1B5E20;
+}
+
+.feature-item p {
+    color: #388E3C;
+}
+
+/* Waitlist Section */
+.waitlist-section {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.waitlist-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1B5E20;
+}
+
+.waitlist-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #C8E6C9;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.cta-button {
+    padding: 16px 40px;
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    min-width: 200px;
+}
+
+.cta-button:hover {
+    background: linear-gradient(to right, #43A047, #1B5E20);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.form-subtext {
+    color: #388E3C;
+    font-size: 1rem;
+}
+
+/* Referral Section */
+.referral-section {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.referral-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1B5E20;
+}
+
+.referral-section > p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #388E3C;
+}
+
+.referral-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.referral-link {
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    border: 2px solid #C8E6C9;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.referral-link input {
+    flex: 1;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    background: #F1F8E9;
+    font-size: 1rem;
+}
+
+.copy-button {
+    padding: 16px 25px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.copy-button:hover {
+    background: #388E3C;
+}
+
+.twitter-button {
+    padding: 16px 30px;
+    background: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    min-width: 180px;
+}
+
+.twitter-button:hover {
+    background: #0d8bd9;
+}
+
+/* Footer */
+footer {
+    background: #1B5E20;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-tagline {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .text-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .subheadline {
+        font-size: 1.1rem;
+    }
+    
+    .features-section,
+    .waitlist-section,
+    .referral-section {
+        padding: 25px 20px;
+    }
+    
+    .features-section h2,
+    .waitlist-section h2,
+    .referral-section h2 {
+        font-size: 1.7rem;
+    }
+    
+    .waitlist-form {
+        flex-direction: column;
+    }
+    
+    .referral-content {
+        flex-direction: column;
+    }
+    
+    .referral-link {
+        width: 100%;
+    }
+    
+    .illustration-container {
+        height: 250px;
+    }
+}
