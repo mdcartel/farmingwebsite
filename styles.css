@@ -29,7 +29,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -113,69 +113,15 @@ main {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Features Section */
-.features-section {
-    padding: 25px 20px;
-    margin-bottom: 20px;
-    background: #F1F8E9;
-    border-radius: 15px;
-}
-
-.features-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #1B5E20;
-    text-align: center;
-}
-
-.features-section > p {
-    font-size: 1.1rem;
-    margin-bottom: 25px;
-    color: #388E3C;
-    text-align: center;
-}
-
-.features-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.feature-item {
-    display: flex;
-    gap: 15px;
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-}
-
-.feature-emoji {
-    font-size: 1.8rem;
-}
-
-.feature-item h3 {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-    color: #1B5E20;
-}
-
-.feature-item p {
-    font-size: 0.95rem;
-    color: #388E3C;
-    margin: 0;
-}
-
 /* Waitlist Section */
 .waitlist-section {
     padding: 25px 20px;
-    margin-bottom: 20px;
     text-align: center;
 }
 
 .waitlist-section h2 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #1B5E20;
 }
 
@@ -235,85 +181,6 @@ main {
     margin: 0;
 }
 
-/* Referral Section */
-.referral-section {
-    padding: 25px 20px;
-    background: #F1F8E9;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.referral-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #1B5E20;
-}
-
-.referral-section > p {
-    font-size: 1.1rem;
-    margin-bottom: 25px;
-    color: #388E3C;
-}
-
-.referral-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.referral-link {
-    display: flex;
-    flex: 1;
-    min-width: 300px;
-    border: 2px solid #C8E6C9;
-    border-radius: 50px;
-    overflow: hidden;
-}
-
-.referral-link input {
-    flex: 1;
-    padding: 15px 20px;
-    border: none;
-    outline: none;
-    background: white;
-    font-size: 1rem;
-}
-
-.copy-button {
-    padding: 15px 25px;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.copy-button:hover {
-    background: #388E3C;
-}
-
-.twitter-button {
-    padding: 15px 25px;
-    background: #1DA1F2;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    min-width: 180px;
-}
-
-.twitter-button:hover {
-    background: #0d8bd9;
-}
-
 /* Footer */
 footer {
     background: #1B5E20;
@@ -365,28 +232,16 @@ footer {
         font-size: 1.1rem;
     }
     
-    .features-section,
-    .waitlist-section,
-    .referral-section {
+    .waitlist-section {
         padding: 20px 15px;
     }
     
-    .features-section h2,
-    .waitlist-section h2,
-    .referral-section h2 {
+    .waitlist-section h2 {
         font-size: 1.5rem;
     }
     
     .waitlist-form {
         flex-direction: column;
-    }
-    
-    .referral-content {
-        flex-direction: column;
-    }
-    
-    .referral-link {
-        width: 100%;
     }
     
     .illustration-container {
