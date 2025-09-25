@@ -15,6 +15,56 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            #000000 0%,
+            rgba(39, 121, 59, 0.4) 15%,
+            #000000 30%,
+            rgba(125, 148, 77, 0.3) 45%,
+            #000000 60%,
+            rgba(31, 95, 47, 0.5) 75%,
+            #000000 90%,
+            rgba(39, 121, 59, 0.2) 100%);
+    z-index: -2;
+    animation: waveMove 15s linear infinite;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(-45deg,
+            transparent 0%,
+            rgba(125, 148, 77, 0.2) 20%,
+            transparent 40%,
+            rgba(39, 121, 59, 0.3) 60%,
+            transparent 80%,
+            rgba(31, 95, 47, 0.25) 100%);
+    z-index: -1;
+    animation: waveMove 20s linear infinite reverse;
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(33.333%);
+    }
 }
 
 .page-container {
@@ -25,13 +75,14 @@ body {
 }
 
 .card {
-    background: linear-gradient(180deg, #95e4f3 0%, #1f5f2f 30%, #abd33f 60%, #27793b 100%);
+    background: linear-gradient(180deg, #95e4f3 0%, #1f5f2f 30%, #7d944d 60%, #27793b 100%);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
     overflow: hidden;
     max-width: 800px;
     margin: 0 auto;
     position: relative;
+    border: 2px solid rgba(149, 228, 243, 0.4);
 }
 
 /* Decorative elements */
@@ -144,7 +195,7 @@ main {
 .waitlist-section {
     padding: 30px;
     text-align: center;
-    background: linear-gradient(135deg, #abd33f 0%, #27793b 100%);
+    background: linear-gradient(135deg, #7d944d 0%, #27793b 100%);
     border-radius: 15px;
     margin: 20px 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -222,8 +273,8 @@ main {
 
 .cta-button {
     padding: 15px 35px;
-    background: white;
-    color: #27793b;
+    background: rgb(2, 44, 5);
+    color: #f4fff7;
     border: none;
     border-radius: 50px;
     font-size: 1.1rem;
