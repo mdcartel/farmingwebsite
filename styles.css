@@ -25,7 +25,7 @@ body {
 }
 
 .card {
-    background: #95e4f3;
+    background: linear-gradient(180deg, #95e4f3 0%, #abd33f 40%, #27793b 100%);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
     overflow: hidden;
@@ -48,7 +48,7 @@ body {
 /* Header */
 header {
     padding: 25px 30px 10px;
-    background: #abd33f;
+    background: transparent;
 }
 
 .logo {
@@ -64,13 +64,13 @@ header {
 .logo-text {
     font-size: 2rem;
     font-weight: 700;
-    color: #000000;
+    color: #27793b;
 }
 
 /* Main Content */
 main {
     padding: 10px 30px 20px;
-    background: #27793b;
+    background: transparent;
 }
 
 .content-wrapper {
@@ -131,12 +131,12 @@ main {
 .illustration-container::before {
     content: "";
     position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background: #abd33f;
-    border-radius: 18px;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #95e4f3, #abd33f);
+    border-radius: 20px;
     z-index: -1;
 }
 
