@@ -25,7 +25,7 @@ body {
 }
 
 .card {
-    background: linear-gradient(180deg, #95e4f3 0%, #abd33f 40%, #27793b 100%);
+    background: linear-gradient(180deg, #95e4f3 0%, #1f5f2f 30%, #abd33f 60%, #27793b 100%);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
     overflow: hidden;
@@ -144,7 +144,7 @@ main {
 .waitlist-section {
     padding: 30px;
     text-align: center;
-    background: linear-gradient(135deg, #95e4f3 0%, #abd33f 50%, #27793b 100%);
+    background: linear-gradient(135deg, #abd33f 0%, #27793b 100%);
     border-radius: 15px;
     margin: 20px 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
