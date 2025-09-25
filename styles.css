@@ -195,7 +195,7 @@ main {
 .waitlist-section {
     padding: 30px;
     text-align: center;
-    background: linear-gradient(135deg, #7d944d 0%, #27793b 100%);
+    background: linear-gradient(135deg, #053501 0%, #285814 100%);
     border-radius: 15px;
     margin: 20px 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -304,14 +304,14 @@ main {
 }
 
 .cta-button:hover {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 112, 50, 0.9);
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
 }
 
 /* Footer */
 footer {
-    background: #27793b;
+    background: #1f5f2f;
     color: white;
     padding: 25px 30px;
     text-align: center;
